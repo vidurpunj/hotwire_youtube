@@ -1,0 +1,12 @@
+<div id="<%= dom_id blog %>">
+  <p>
+    <strong>Body:</strong>
+    <%= blog.body %>
+  </p>
+
+  <p>
+    <strong>Likes:</strong>
+    <%= button_to "Likes (#{blog.likes})", blogs_like_path(blog) %>
+  </p>
+
+</div>
